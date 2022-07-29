@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap");
+
+@import "cssreset.css";
+
+@import "landing-page/top.css";
+
+@import "landing-page/about.css";
+
+@import "landing-page/portfolio.css";
+
+@import "landing-page/skills.css";
+
+@import "portfolio/projects.css";
+
+@import "footer.css";
+
+body {
+  /* background: #eeeeee; */
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+}
+header .logo .name {
+  background: #16171b;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+}
+header .header-menu {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-menu a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #16171b;
+  padding: 0 10px;
+}
+header .header-menu a:hover {
+  font-weight: 700;
+  color: #52b8ff;
+}
+header .menu-btn {
+  font-weight: 700;
+  color: #52b8ff;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+}
+.mobile-menu a {
+  padding: 15px;
+  text-decoration: none;
+  color: #16171b;
+}
+.mobile-menu a:hover {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background: #52b8ff;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+/* phones */
+@media only screen and (max-width: 767px) {
+  header .header-menu {
+    display: none;
+  }
+  header .menu-btn {
+    display: flex;
+  }
+  header .logo {
+    font-size: 1.3rem;
+  }
+  .mobile-menu {
+    display: flex;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 10;
+    transform: translate3d(-100%, 0, 0);
+    transition: all 0.4s ease-in-out;
+    -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  }
+}

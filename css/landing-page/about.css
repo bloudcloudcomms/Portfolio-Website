@@ -1,0 +1,49 @@
+#about {
+  padding: 50px 40px 80px;
+  background: #f9fafc;
+}
+#about .title h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#about .about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: white;
+}
+#about .about-container p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+#about .about-container .info {
+}
+#about .about-container .socials {
+}
+#about .about-container a {
+  font-size: 1.5rem;
+  color: rgb(16, 16, 16);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px;
+}
+#about .about-container a:hover {
+  color: #52b8ff;
+}
+/* Tablet */
+@media only screen and (max-width: 960px) {
+  #about .about-container {
+    grid-template-columns: 100%;
+  }
+}
+/* Phones */
+@media only screen and (max-width: 767px) {
+}
