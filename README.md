@@ -4,6 +4,6 @@ Here is my completed first portfolio website with the most recent projects. I bu
 
 ![landing page](screenshots/1.png)
 ![landing page continued](screenshots/2.png)
-![landing page continued](screenshots/1.png)
+![landing page continued](screenshots/3.png)
 
 ![project layout sample](screenshots/4.png)
